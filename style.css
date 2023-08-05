@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+#nav>h1 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+#nav>h1 span {
+    font-weight: 600;
+}
+
+
+#nav #nav-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #nav-elements a {
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+
+.navbar-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 18px;
+    margin: 0 10px;
+    border-radius: 50px;
+    transition: background-color 0.4s, transform 0.5s;
+}
+
+.navbar-button:hover {
+    background-color: springgreen;
+    border-radius: 50px;
+    transform: translateY(-1.5px);
+}
+
+#nav #nav-elements a:nth-last-child(1) {
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav #nav-elements a:nth-last-child(1) #green {
+    width: 100%;
+    background-color: springgreen;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+}
+
+#nav #nav-elements a:nth-last-child(1) h5 {
+    font-weight: 100;
+    position: relative;
+    z-index: 2;
+}
+
+#nav #nav-elements a:nth-last-child(1):hover #green {
+    left: 0;
+}
+
+#main>h1 {
+    font-size: 5.4vw;
+    font-weight: 100;
+    text-transform: capitalize;
+    width: 40%;
+    position: absolute;
+    z-index: 3;
+    /* background-color: red; */
+    text-align: center;
+}
+
+#main>h1::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: -2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#main #img1 {
+    height: 450px;
+    width: 300px;
+    position: absolute;
+    left: 6%;
+    top: 28%;
+}
+
+#main #img2 {
+    height: 250px;
+    width: 240px;
+    position: absolute;
+    right: 27%;
+    top: 20%;
+}
+
+#main #img3 {
+    height: 210px;
+    width: 200px;
+    position: absolute;
+    right: 9%;
+    bottom: 15%;
+}
+
+#main img {
+    transition: margin 0.3s ease;
+}
+
+#main img:hover {
+    margin-top: -10px;
+}
+
+#about {
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 80%;
+    background-color: #000;
+    flex-direction: column;
+}
+
+#about h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+#about h5::before {
+    content: "";
+    position: absolute;
+    left: -13%;
+    top: 32%;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: springgreen;
+}
+
+
+#about h1 {
+    font-size: 45px;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    font-weight: 100;
+    margin: 36px 0;
+}
+
+#about h1::after {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 140px;
+    left: 44%;
+    bottom: 150px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+}
+
+#about-us {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#about-us>h4 {
+    font-size: 28px;
+    font-family: gilroy;
+    font-weight: 500;
+    color: #fff;
+}
+
+#green-div {
+    height: 40px;
+    width: 60px;
+    /* background-color: yellow; */
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#green-div>i {
+    z-index: 8;
+}
+
+#green-div #green {
+    width: 100%;
+    background-color: springgreen;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease;
+}
+
+#green-div:hover #green {
+    left: 0%;
+}
+
+#portfolio {
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 165%;
+    background-color: #ffffff;
+    flex-direction: column;
+}
+
+#card-container {
+    display: flex;
+    position: relative;
+    gap: 6rem;
+
+}
+
+#card-container>h1 {
+    position: absolute;
+    font-family: gilroy;
+    font-weight: 300;
+    font-size: 40px;
+    color: #000;
+    top: -40%;
+    left: 46%;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(100, 94, 94);
+    text-align: center;
+}
+
+.image-container>img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.card>.text-container {
+    padding: 15px;
+}
+
+.card>.text-container>a {
+    text-decoration: none;
+    font-family: gilroy;
+    font-weight: 300;
+    color: rgb(8, 8, 8);
+}
+
+.card>.text-container>a:hover {
+    color: rgba(116, 62, 62, 0.521);
+    transition: color 0.5s ease-in-out;
+}

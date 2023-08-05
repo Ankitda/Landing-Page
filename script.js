@@ -1,0 +1,29 @@
+gsap.from("#nav",{
+    delay:0.2,
+    opacity:0,
+    duration:0.5,
+    y:-80, 
+})
+gsap.from("#img1",{
+    delay:0.4,
+    opacity:0,
+    duration:1.5,
+    y:60
+})
+gsap.from("#img2",{
+    delay:0.4,
+    opacity:0,
+    duration:1.5,
+    x:60
+})
+gsap.from("#img3",{
+    delay:0.4,
+    opacity:0,
+    duration:1.5,
+    y:-60
+})
+gsap.from("#main h1",{
+    delay:0.4,
+    opacity:0,
+    duration:2
+})
