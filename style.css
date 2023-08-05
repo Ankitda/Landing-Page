@@ -233,7 +233,7 @@ body {
     overflow: hidden;
 }
 
-#green-div>i {
+#green-div>a i {
     z-index: 8;
 }
 
