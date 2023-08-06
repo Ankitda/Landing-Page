@@ -27,3 +27,27 @@ gsap.from("#main h1",{
     opacity:0,
     duration:2
 })
+
+gsap.from("#card-container",{
+    opacity:0,
+    duration:2,
+    scrollTrigger:{
+        trigger:"#card-container",
+        scroller:"body",
+        start:"top 75%"
+    }
+})
+
+var t1 = gsap.timeline();
+t1.from("#about h5",{
+    opacity:0,
+    duration:1,
+})
+t1.from("#about h1",{
+    opacity:0,
+    duration:1,
+})
+t1.from("#about #about-us",{
+    opacity:0,
+    duration:1,
+})
